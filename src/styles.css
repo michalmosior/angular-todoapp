@@ -7,9 +7,14 @@
 :root {
   --primary-white: rgb(255, 248, 248);
   --primary-black: rgb(32, 31, 31);
+  --gray: rgb(243, 235, 235);
+  --green: #31c579;
 }
 html {
   font-family: "Josefin Sans", sans-serif;
+}
+button {
+  cursor: pointer;
 }
 .container {
   display: flex;
