@@ -1,0 +1,16 @@
+main {
+  background-color: var(--gray);
+}
+section {
+  padding: 0.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+app-task-form {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
