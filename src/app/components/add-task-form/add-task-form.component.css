@@ -13,8 +13,8 @@ form input {
   padding: 0.3rem 0.6rem;
 }
 form button {
-  width: 12%;
-  max-width: 3rem;
+  width: 12.5%;
+
   height: 100%;
   background-color: var(--accept-color);
   color: var(--primary-white);
