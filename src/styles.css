@@ -8,10 +8,15 @@
   --primary-white: rgb(255, 248, 248);
   --primary-black: rgb(32, 31, 31);
   --gray: rgb(243, 235, 235);
-  --green: #31c579;
+  --dark-gray: rgb(164, 163, 163);
+  --accept-color: #31c579;
+  --delete-color: #c55431;
 }
 html {
   font-family: "Josefin Sans", sans-serif;
+}
+body {
+  background-color: var(--gray);
 }
 button {
   cursor: pointer;
