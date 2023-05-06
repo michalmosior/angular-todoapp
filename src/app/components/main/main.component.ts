@@ -22,7 +22,16 @@ export class MainComponent implements OnInit {
   }
 
   addTask(newTask: Task) {
-    this.tasks.push(newTask);
-    this.isTasks = true;
+    this.apiService.addTask(newTask).subscribe((newTask) => {
+      this.tasks.unshift(newTask);
+      this.isTasks = true;
+    });
+  }
+
+  deleteTask(task: Task) {
+    this.apiService.deleteTask(task).subscribe(() => {
+      this.tasks = this.tasks.filter((item) => item._id !== task._id);
+      this.tasks.length === 0 ? (this.isTasks = false) : (this.isTasks = true);
+    });
   }
 }

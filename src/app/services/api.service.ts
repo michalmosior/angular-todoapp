@@ -9,15 +9,19 @@ import { Task } from '../Task';
 export class ApiService {
   private url = 'http://localhost:3002/task';
   constructor(private http: HttpClient) {}
-   httpOptions = {
+  httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
     }),
   };
-   getTasks(): Observable<Task[]> {
+  getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.url);
   }
-   addTask(task: Task): Observable<Task> {
+  addTask(task: Task): Observable<Task> {
     return this.http.post<Task>(this.url, task, this.httpOptions);
+  }
+  deleteTask(task: Task): Observable<Task> {
+    const taskToDeleteUrl = `${this.url}/${task._id}`;
+    return this.http.delete<Task>(taskToDeleteUrl);
   }
 }

@@ -2,7 +2,11 @@
   <section>
     <app-add-task-form (onAddTask)="addTask($event)"></app-add-task-form>
     <ul *ngIf="isTasks; else elseBlock">
-      <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+      <app-task-item
+        *ngFor="let task of tasks"
+        [task]="task"
+        (onDeleteTask)="deleteTask(task)"
+      ></app-task-item>
     </ul>
     <ng-template #elseBlock><p class="no-tasks">No tasks yet!</p></ng-template>
   </section>

@@ -3,6 +3,6 @@
   {{ task.description }}
   <div class="buttons">
     <button class="edit-button">Edit</button>
-    <button class="delete-button">X</button>
+    <button (click)="onDelete(task)" class="delete-button">X</button>
   </div>
 </li>
