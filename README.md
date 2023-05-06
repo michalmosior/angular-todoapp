@@ -1,21 +1,19 @@
 # AngularTodoapp
 
-<h3>About</h3>
-<p>The Todo-App is a task managing Web-Application to help its users to stay organized for their day to day activities.</p> 
-<p>App can be used for multiple purposes such as shopping lists, taking notes or planning an event.</p>
+<h2>About</h2>
+<p>The Todo-App is a task managing Web-Application to help its users to stay organized for their day to day activities. App can be used for multiple purposes such as shopping lists, taking notes or planning an event.</p>
 
-
-<p>The Todo-App's features include:</p>
+<h3>The Todo-App's features include:</h3>
 
 <p>
-<h4>Adding Tasks</h4>
+Adding Tasks
 </p>
 
 <p>
-<h4>Editing Tasks</h4>
+Editing Tasks
 </p>
 <p>
-<h4>Marking Tasks as completed</h4>
+Marking Tasks as completed
 </p>
 
 ## Development server
