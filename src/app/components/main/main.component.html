@@ -6,6 +6,7 @@
         *ngFor="let task of tasks"
         [task]="task"
         (onDeleteTask)="deleteTask(task)"
+        (onToggleCompletedTask)="toggleStatusTask(task)"
       ></app-task-item>
     </ul>
     <ng-template #elseBlock><p class="no-tasks">No tasks yet!</p></ng-template>

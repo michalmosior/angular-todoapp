@@ -34,4 +34,9 @@ export class MainComponent implements OnInit {
       this.tasks.length === 0 ? (this.isTasks = false) : (this.isTasks = true);
     });
   }
+  
+  toggleStatusTask(task: Task) {
+    task.completed = !task.completed;
+    this.apiService.editTask(task).subscribe();
+  }
 }

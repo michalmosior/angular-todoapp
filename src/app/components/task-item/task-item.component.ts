@@ -9,6 +9,7 @@ import { Task } from 'src/app/Task';
 export class TaskItemComponent {
   @Input() task: Task = { _id: '', description: '', completed: false };
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
+  @Output() onToggleCompletedTask: EventEmitter<Task> = new EventEmitter();
   isEdit = false;
   showModal = true;
 
@@ -17,5 +18,8 @@ export class TaskItemComponent {
   }
   editInputToggle() {
     this.isEdit = !this.isEdit;
+  }
+  onToggleCompleted(task: Task) {
+    this.onToggleCompletedTask.emit(task);
   }
 }

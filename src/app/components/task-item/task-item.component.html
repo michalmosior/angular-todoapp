@@ -1,5 +1,5 @@
 <li class="task-item">
-  <input type="checkbox" />
+  <input type="checkbox" (click)="onToggleCompleted(task)" />
   {{ task.description }}
   <div class="buttons">
     <button (click)="editInputToggle()" class="edit-button">Edit</button>
