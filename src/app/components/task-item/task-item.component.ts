@@ -11,7 +11,6 @@ export class TaskItemComponent {
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
   @Output() onToggleCompletedTask: EventEmitter<Task> = new EventEmitter();
   isEdit = false;
-  showModal = true;
 
   onDelete(task: Task) {
     this.onDeleteTask.emit(task);
