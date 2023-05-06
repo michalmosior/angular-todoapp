@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit(task, $event)" class="edit-form">
+  <input
+    type="text"
+    placeholder=""
+    name="newDescription"
+    [(ngModel)]="newDescription"
+  />
+  <div class="buttons">
+    <button class="accept-button">&#x2714;</button>
+    <button type="button" class="back-button" (click)="closeEdit()">X</button>
+  </div>
+</form>

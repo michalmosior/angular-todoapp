@@ -1,8 +1,13 @@
-<li class="task-item" t>
-  <input type="checkbox" />
-  test task
+<li class="task-item">
+  <input type="checkbox" (click)="onToggleCompleted(task)" />
+  {{ task.description }}
   <div class="buttons">
-    <button class="edit-button">Edit</button>
-    <button class="delete-button">X</button>
+    <button (click)="editInputToggle()" class="edit-button">Edit</button>
+    <button (click)="onDelete(task)" class="delete-button">X</button>
   </div>
+  <app-edit-task
+    *ngIf="isEdit"
+    [task]="task"
+    (close)="editInputToggle()"
+  ></app-edit-task>
 </li>

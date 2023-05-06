@@ -1,8 +1,9 @@
-<form class="form">
+<form (ngSubmit)="onSubmit($event)">
   <input
     type="text"
     name="description"
     id="description"
+    [(ngModel)]="description"
     placeholder="Add new task..."
   />
   <button>+</button>
