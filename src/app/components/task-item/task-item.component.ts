@@ -9,8 +9,13 @@ import { Task } from 'src/app/Task';
 export class TaskItemComponent {
   @Input() task: Task = { _id: '', description: '', completed: false };
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
+  isEdit = false;
+  showModal = true;
 
   onDelete(task: Task) {
     this.onDeleteTask.emit(task);
+  }
+  editInputToggle() {
+    this.isEdit = !this.isEdit;
   }
 }

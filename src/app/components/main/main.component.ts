@@ -23,7 +23,7 @@ export class MainComponent implements OnInit {
 
   addTask(newTask: Task) {
     this.apiService.addTask(newTask).subscribe((newTask) => {
-      this.tasks.unshift(newTask);
+      this.tasks.push(newTask);
       this.isTasks = true;
     });
   }

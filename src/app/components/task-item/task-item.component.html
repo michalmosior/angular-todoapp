@@ -2,7 +2,12 @@
   <input type="checkbox" />
   {{ task.description }}
   <div class="buttons">
-    <button class="edit-button">Edit</button>
+    <button (click)="editInputToggle()" class="edit-button">Edit</button>
     <button (click)="onDelete(task)" class="delete-button">X</button>
   </div>
+  <app-edit-task
+    *ngIf="isEdit"
+    [task]="task"
+    (close)="editInputToggle()"
+  ></app-edit-task>
 </li>

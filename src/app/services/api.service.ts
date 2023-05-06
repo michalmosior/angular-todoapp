@@ -24,4 +24,8 @@ export class ApiService {
     const taskToDeleteUrl = `${this.url}/${task._id}`;
     return this.http.delete<Task>(taskToDeleteUrl);
   }
+  editTask(task: Task): Observable<Task> {
+    const taskToEditUrl = `${this.url}/${task._id}`;
+    return this.http.put<Task>(taskToEditUrl, task, this.httpOptions);
+  }
 }
