@@ -9,8 +9,10 @@ import { Task } from 'src/app/Task';
 export class MainComponent {
   tasks: Task[] = [];
 
+  isTasks = false;
+  
   addTask(newTask: Task) {
     this.tasks.push(newTask);
-    console.log(this.tasks);
+    this.isTasks = true;
   }
 }
