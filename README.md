@@ -2,7 +2,8 @@
 
 <h3>About</h3>
 <p>The Todo-App is a task managing Web-Application to help its users to stay organized for their day to day activities.</p> 
-<p>The Todo-App can be used for multiple purposes such as shopping lists, taking notes or planning an event.</p>
+<p>App can be used for multiple purposes such as shopping lists, taking notes or planning an event.</p>
+
 
 <p>The Todo-App's features include:</p>
 
@@ -15,10 +16,6 @@
 </p>
 <p>
 <h4>Marking Tasks as completed</h4>
-</p>
-
-<p>
-<h4>User Friendly UI</h4>
 </p>
 
 ## Development server
