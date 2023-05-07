@@ -37,8 +37,18 @@ form {
 }
 .alert {
   position: absolute;
-  font-size: 1.2rem;
-  top: 30%;
-  left: 65%;
+  font-size: 1rem;
+  top: 35%;
+  left: 50%;
   color: var(--delete-color);
+}
+@media (min-width: 576px) {
+  .alert {
+    left: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .alert {
+    left: 65%;
+  }
 }
