@@ -1,10 +1,13 @@
 <form (ngSubmit)="onSubmit($event)">
   <input
+    class="input"
+    [class.empty-input]="validate"
     type="text"
     name="description"
     id="description"
     [(ngModel)]="description"
     placeholder="Add new task..."
   />
-  <button>+</button>
+  <div *ngIf="validate" class="alert">Field is required!</div>
+  <button class="button">+</button>
 </form>
